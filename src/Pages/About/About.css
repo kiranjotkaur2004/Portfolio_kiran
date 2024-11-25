@@ -1,0 +1,126 @@
+.home{
+grid-template-columns: 4.32fr 7.68fr;
+align-items: center;
+padding:40px;
+/* height:100vh; */
+}
+
+  
+
+.home-img{
+height:100%;
+object-fit: cover;
+border-radius: 30px;
+box-shadow: 0 0 8px hsla(0, 0%, 0%, 0.3);
+/* z-index: 1; */
+
+
+}
+
+.home-img:hover{
+    transform: perspective(500px) rotateY(10deg) rotateX(5deg) scale(1.05); /* Tilt effect */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* Enhanced shadow on hover */
+}
+
+.home-data{
+    max-width: 600px;
+    margin-inline: auto;
+    padding-top: 20px;
+}
+
+.home-title{
+    position: relative;
+    font-size: var(--h1-font-size);
+    line-height: 1.24;
+    padding-left: 70px;
+    z-index: -1;
+}
+
+.home-title span{
+    color: var(--first-color);
+   
+}
+
+.home-title::before{
+content: '';
+position: absolute;
+left: 0;
+top: 22%;
+width: 40px;
+height: 5px;
+background-color: var(--first-color);
+border-radius: 10px;
+}
+
+.home-description{
+    line-height: 2.125;
+    margin-block: 16px 32px;
+}
+
+.button-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.button{
+    margin-top: 10px;
+    /* z-index: -1; */
+}
+
+.color-block{
+    position: absolute;
+    height:200%;
+     width:100%;
+    background-color: var(--first-color);
+    top:-50%;
+    left:-93%;
+    transform: rotate(15deg);
+    z-index: -1;
+    
+}
+
+.skill-icon{
+    display: flex;
+    gap:20px;
+    height:80px;
+    width:100px;
+    margin-top: 50px;
+}
+
+/* Existing styles remain the same */
+
+/* Media Query for small screens */
+@media (max-width: 768px) {
+    .home {
+      grid-template-columns: 1fr; /* Single column layout */
+      text-align: center; /* Center the text */
+      /* height: auto;  */
+    }
+
+    
+  
+    .home-img {
+        height:50%;
+        
+      margin-top: 20px; /* Add spacing above the image */
+      height: auto; /* Make sure the image retains its aspect ratio */
+    }
+  
+    .home-data {
+      padding: 20px; /* Adjust padding for smaller screens */
+    }
+  
+    .home-title {
+      font-size: var(--h2-font-size); /* Use a smaller font size */
+      padding-left: 0; /* Remove left padding for better alignment */
+    }
+  
+    .button {
+      padding: 10px 40px; /* Adjust button padding for smaller screens */
+      font-size: var(--small-font-size); /* Use a smaller font size */
+      
+    }
+  }
+
+ 

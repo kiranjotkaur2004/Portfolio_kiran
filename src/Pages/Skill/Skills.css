@@ -1,0 +1,87 @@
+.skills-container {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    color: #e0e0e0; /* Adjust color as needed */
+}
+
+
+.skills-title {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.skills-description {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.skill-category {
+    margin-bottom: 2rem;
+}
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem; /* Space between technology items */
+}
+
+.technology {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Background for tech items */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+.technology:hover{
+    transform: perspective(500px) rotateY(10deg) rotateX(5deg) scale(1.05); /* Tilt effect */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* Enhanced shadow on hover */
+
+}
+
+.icon {
+    margin-right: 0.5rem;
+}
+
+.tech-name {
+    font-size: 1rem; /* Adjust font size as needed */
+}
+
+.icon-image{
+    width:80px;
+    height:80px;
+}
+
+
+@media (max-width: 768px) {
+    .skills-title {
+        font-size: 50px;
+        font-weight: 300; /* Adjust font size for mobile */
+    }
+  
+    .icon-image {
+      width: 60px; /* Adjust icon size for mobile */
+      height: 60px;
+    }
+  
+    .tech-name {
+      font-size: 0.9rem; /* Smaller font size for mobile */
+    }
+  }
+  

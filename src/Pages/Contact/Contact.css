@@ -1,0 +1,145 @@
+/* Main form container */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+
+  }
+  
+  .form {
+    background-color: rgb(24, 22, 49); /* Dark background for the form */
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0px 8px 16px rgba(245, 242, 242, 0.2); /* Soft shadow */
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 20px rgba(255, 255, 255, 0.3);
+  }
+  
+  .form h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  
+  .form p {
+    font-size: 1.2rem;
+    color: #ddd;
+    margin-bottom: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #ccc;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    background-color: #39393b;
+    color: white;
+   
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    background-color: #161038;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.2);
+  }
+  
+  .form-group textarea {
+    height: 150px;
+    resize: none;
+  }
+  
+  button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #401a5e; /* Blue color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #9002e2;
+    transform: translateY(-3px);
+  }
+  
+  button:active {
+    transform: translateY(0);
+  }
+
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .form-container {
+      padding: 1rem;
+    }
+  
+    .form {
+      padding: 1.5rem;
+    }
+  
+    .form h3 {
+      font-size: 1.8rem;
+    }
+  
+    .form p {
+      font-size: 1.1rem;
+    }
+  
+    .form-group input,
+    .form-group textarea {
+      padding: 0.65rem;
+    }
+  
+    button {
+      padding: 0.65rem 1.2rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form h3 {
+      font-size: 1.5rem;
+    }
+  
+    .form p {
+      font-size: 1rem;
+    }
+  
+    .form-group input,
+    .form-group textarea {
+      padding: 0.5rem;
+    }
+  
+    button {
+      padding: 0.5rem 1rem;
+      font-size: 0.8rem;
+    }
+  }
+  

@@ -1,0 +1,97 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 70px 0;
+}
+
+.project-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-cards {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.custom-box {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: rgb(24, 22, 49);
+  width: 360px;
+}
+
+.apple-image {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.github {
+  background-color: rgb(10, 10, 10);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(223, 217, 255, 0.5);
+}
+
+.github-image {
+  width: 50%;
+  height: 50%;
+}
+
+.project-info {
+  margin-top: 2rem;
+}
+
+.project-tags {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  font-size: 15px;
+}
+
+.tag-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 4px;
+}
+
+/* Section headers */
+.sectionSubText {
+  font-size: 50px;
+    font-weight: 300;;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+
+.sectionHeadText {
+  font-size: 20px;
+  color: #dfd9ff;
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .project-cards {
+    justify-content: center;
+  }
+}
