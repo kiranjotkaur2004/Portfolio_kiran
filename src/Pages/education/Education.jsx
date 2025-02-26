@@ -15,25 +15,21 @@ const EducationCard = ({ detail }) => (
     contentStyle={{ background: "#1d1836", color: "#fff" }}
     contentArrowStyle={{ borderRight: "7px solid #232631" }}
     date={detail.date}
-    iconStyle={{ background: detail.iconBg }}
-    icon={
-      <div className="edu-image">
-        <img src={detail.icon} alt="title" />
-      </div>
-    }
+    iconStyle={{ background: detail.iconBg, objectFit: "contain" }}
   >
     <div>
       <div className="detail-icon">
-      <img
-        src={detail.icon}
-        style={{
-          height: "50px",
-          width: "50px",
-          background: "white",
-          borderRadius: "50px",
-        }}
-      />
-      <h3 style={{ text: "white" }}>{detail.title}</h3>
+        <img
+          src={detail.icon}
+          style={{
+            height: "50px",
+            width: "50px",
+            background: "white",
+            borderRadius: "50px",
+            objectFit: "contain",
+          }}
+        />
+        <h3 style={{ text: "white" }}>{detail.title}</h3>
       </div>
       <p>{detail.date}</p>
       <p>{detail.degree_name}</p>

@@ -5,20 +5,33 @@ import { projects } from "../../Constant/index";
 import { fadeIn, textVariant } from "../../Components/utils/motion";
 import "./Project.css";
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({
+  index,
+  name,
+  description,
+  tags,
+  image,
+  source_code_link,
+}) => {
   return (
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
       initial="hidden"
       animate="show"
       className="project-card"
+      onClick={() => window.open(source_code_link, "_blank")} // Clickable entire card
+      style={{ cursor: "pointer" }} // Add pointer cursor for better UX
     >
       <Tilt className="custom-box">
         <div className="project-card-content">
           <img src={image} alt={name} className="apple-image" />
           <div className="card-content">
-            <div className="github" onClick={() => window.open(source_code_link, "_blank")}>
-              <img src="/Github.png" className="github-image" alt="Github icon" />
+            <div className="github">
+              <img
+                src="/Github.png"
+                className="github-image"
+                alt="Github icon"
+              />
             </div>
           </div>
         </div>
@@ -30,7 +43,13 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
           {tags.map((tag) => (
             <p key={tag.name} className="tag" style={{ color: tag.color }}>
               {tag.name}
-              {tag.icon && <img src={tag.icon} alt={`${tag.name} icon`} className="tag-icon" />}
+              {tag.icon && (
+                <img
+                  src={tag.icon}
+                  alt={`${tag.name} icon`}
+                  className="tag-icon"
+                />
+              )}
             </p>
           ))}
         </div>
@@ -47,7 +66,9 @@ const Project = () => {
         <p className="sectionHeadText">My work</p>
       </motion.div>
       <motion.p variants={fadeIn("", "", 0.1, 1)} className="project-variants">
-        Following projects showcase my skills and experience through real-world examples. Each project is briefly described with links to code repositories and live demos.
+        Following projects showcase my skills and experience through real-world
+        examples. Each project is briefly described with links to code
+        repositories and live demos.
       </motion.p>
       <div className="project-cards">
         {projects.map((project, index) => (
