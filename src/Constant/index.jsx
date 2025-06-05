@@ -7,7 +7,7 @@ const edudetail = [
     icon: "/colle.png",
     iconBg: "#E6DEDD",
     description:
-      "I am currently pursuing a Bachelor's in Computer Applications at Khalsa College For Women, where I am deepening my knowledge. My academic journey equips me with a strong foundation in programming and modern technologies.",
+      "I completed my Bachelor's in Computer Applications at Khalsa College For Women, where I am deepening my knowledge. My academic journey equips me with a strong foundation in programming and modern technologies.",
   },
 
   {
@@ -36,7 +36,7 @@ const projects = [
       },
     ],
     image: "youtube.jpg",
-    source_code_link: "https://yellow-elephant.static.domains/youtube1",
+    source_code_link: "https://elderberry-1749041347791.staticrun.app/",
   },
 
   {
