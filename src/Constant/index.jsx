@@ -2,8 +2,8 @@ const edudetail = [
   {
     id: 1,
     title: "Khalsa College For Women, Civil Lines, ludhiana",
-    degree_name: "Bachelor in Computer Applications (BCA)",
-    date: "Aug 2023 -May 2025",
+    degree_name: "Bachelor in Computer Applications (BCA) (CGPA: 9.00)",
+    date: "2022-2025",
     icon: "/colle.png",
     iconBg: "#E6DEDD",
     description:
@@ -12,9 +12,9 @@ const edudetail = [
 
   {
     id: 2,
-    title: "Shri Harkrishan Sahib Public High School",
+    title: "Shri Harkrishan Sahib Public High School (CGPA: 9.90)",
     degree_name: "Secondary",
-    date: "2022 -2023",
+    date: "2021 -2022",
     icon: "/secondary.jpg",
     iconBg: "#E6DEDD",
     description:
@@ -54,6 +54,45 @@ const projects = [
     source_code_link: "https://stalwart-cuchufli-dd5e80.netlify.app/",
   },
   {
+    name: "ROCK-PAPER-SCISSOR using javascript",
+    description:
+      "Developed ROCK-PAPER-SCISSOR frontend website with Html, CSS and JavaScript. ",
+    tags: [
+      {
+        icon: "/html.png",
+      },
+      {
+        icon: "/css.png",
+      },
+      {
+        icon: "/javascript.png",
+      },
+    ],
+    image: "rock.png",
+    source_code_link:
+      "https://684d6a02b54488c2c9aa389e--spiffy-speculoos-2cf9e8.netlify.app/",
+  },
+
+  {
+    name: "stopwatch using javascript",
+    description:
+      "Developed stopwatch frontend website with Html, CSS and JavaScript. ",
+    tags: [
+      {
+        icon: "/html.png",
+      },
+      {
+        icon: "/css.png",
+      },
+      {
+        icon: "/javascript.png",
+      },
+    ],
+    image: "stop.png",
+    source_code_link: "https://keen-cendol-4aa952.netlify.app/",
+  },
+
+  {
     name: "Furniture",
     description:
       "Developed an engaging and interactive Furniture frontend website using React providing a localhost functionality and optimized for responsive design",
@@ -61,14 +100,17 @@ const projects = [
       {
         icon: "/react.png",
       },
+      {
+        icon: "/bootstrap.png",
+      },
     ],
     image: "furniture.jpg",
     source_code_link: "https://furniture-mu.vercel.app/",
   },
   {
-    name: "Lover's_Court",
+    name: "Meuble",
     description:
-      "Developed an engaging and interactive Lover's_Court website using React,Node.js,Express.js,Mongodb providing a seamless user experience.Prioritized user experience, implemented efficient navigation, and optimized for responsive design",
+      "Developed an engaging and interactive furniture website using React,Node.js,Express.js,Mongodb providing a seamless user experience.Prioritized user experience, implemented efficient navigation, and optimized for responsive design",
     tags: [
       {
         icon: "/react.png",
@@ -88,8 +130,24 @@ const projects = [
       {
         icon: "/git.png",
       },
+      {
+        icon: "/bootstrap.png",
+      },
     ],
-    image: "currently.jpg",
+    image: "meuble.png",
+  },
+
+  {
+    name: "Iron-Pulse",
+    description:
+      " Developed a responsive gym website using Mix.com’s drag-and-drop interface, incorporating media elements and ensuring seamless performance across devices.",
+    tags: [
+      {
+        icon: "/wix.png",
+      },
+    ],
+    image: "pp.png",
+    source_code_link: "https://kiranjotkaurkalra2.wixsite.com/my-site-4/about",
   },
 ];
 

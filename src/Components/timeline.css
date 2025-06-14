@@ -1,17 +1,16 @@
 /* src/timeline.css */
 
 .vertical-timeline-element-title {
-    font-size: 1.5em;
-    color: #333;
-  }
-  
-  .vertical-timeline-element {
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-  }
-  
-  .vertical-timeline-element-content {
-    padding: 20px;
-  }
-  
+  font-size: 1.5em;
+  color: #333;
+}
+
+.vertical-timeline-element {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.vertical-timeline-element-content {
+  padding: 20px;
+}

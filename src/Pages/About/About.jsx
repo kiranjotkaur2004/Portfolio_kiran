@@ -16,9 +16,14 @@ const About = () => {
         <div className="home-content">
           <div className="home-data">
             <h1 className="home-title">
-              <span>I'm Kiranjot Kaur.</span> Full Stack Web Developer
+              <span>I'm Kiranjot Kaur.</span> Web Developer
             </h1>
             <p className="home-description">
+              <b>
+                {" "}
+                "Quick to learn and adapt to emerging technologies, frameworks,
+                and tools in dynamic environments."
+              </b>{" "}
               As a passionate web developer, I specialize in creating innovative
               and user-centric websites that combine aesthetic design with
               robust functionality.

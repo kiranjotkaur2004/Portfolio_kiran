@@ -1,6 +1,5 @@
 import React from "react";
 import "./Skills.css";
-import { StarsCanvas } from "../../Components/Stars";
 
 const skills = [
   {
@@ -10,6 +9,7 @@ const skills = [
       { name: "CSS", image: "/css.png" },
       { name: "Bootstrap", image: "/bootstrap.png" },
       { name: "Javascript", image: "/javascript.png" },
+      { name: "PHP", image: "/pn.png" },
       { name: "React", image: "/react.png" },
     ],
   },
@@ -19,6 +19,7 @@ const skills = [
       { name: "Node Js", image: "/node.png" },
       { name: "MongoDB", image: "/mongodb.png" },
       { name: "Express JS", image: "/express.png" },
+      { name: "Sql", image: "/sql.png" },
     ],
   },
   {
@@ -28,6 +29,7 @@ const skills = [
       { name: "VS Code", image: "/vs.png" },
       { name: "Git", image: "/git.png" },
       { name: "Postman", image: "/postman.png" },
+      { name: "Wix", image: "/wix.png" },
     ],
   },
 ];
@@ -35,7 +37,6 @@ const skills = [
 const Skills = () => {
   return (
     <>
-      <StarsCanvas />
       <div className="skills-container">
         <h2 className="skills-title">Skills</h2>
         <p className="skills-description">I worked on various frontend</p>
