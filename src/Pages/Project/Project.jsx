@@ -19,12 +19,13 @@ const ProjectCard = ({
       initial="hidden"
       animate="show"
       className="project-card"
-      onClick={() => window.open(source_code_link, "_blank")} // Clickable entire card
-      style={{ cursor: "pointer" }} // Add pointer cursor for better UX
+      onClick={() => window.open(source_code_link, "_blank")}
+      style={{ cursor: "pointer" }}
     >
       <Tilt className="custom-box">
         <div className="project-card-content">
           <img src={image} alt={name} className="apple-image" />
+
           <div className="card-content">
             <div className="github">
               <img
@@ -35,14 +36,17 @@ const ProjectCard = ({
             </div>
           </div>
         </div>
+
         <div className="project-info">
           <h3>{name}</h3>
           <p>{description}</p>
         </div>
+
         <div className="project-tags">
           {tags.map((tag) => (
             <p key={tag.name} className="tag" style={{ color: tag.color }}>
               {tag.name}
+
               {tag.icon && (
                 <img
                   src={tag.icon}
@@ -65,11 +69,13 @@ const Project = () => {
         <h2 className="sectionSubText">Projects</h2>
         <p className="sectionHeadText">My work</p>
       </motion.div>
+
       <motion.p variants={fadeIn("", "", 0.1, 1)} className="project-variants">
         Following projects showcase my skills and experience through real-world
-        examples. Each project is briefly described with links to code
+        examples.<br></br> Each project is briefly described with links to code
         repositories and live demos.
       </motion.p>
+
       <div className="project-cards">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />

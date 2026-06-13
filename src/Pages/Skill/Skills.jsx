@@ -8,7 +8,7 @@ const skills = [
       { name: "HTML", image: "/html.png" },
       { name: "CSS", image: "/css.png" },
       { name: "Bootstrap", image: "/bootstrap.png" },
-      { name: "Javascript", image: "/javascript.png" },
+      { name: "JavaScript", image: "/javascript.png" },
       { name: "PHP", image: "/pn.png" },
       { name: "React", image: "/react.png" },
     ],
@@ -19,13 +19,34 @@ const skills = [
       { name: "Node Js", image: "/node.png" },
       { name: "MongoDB", image: "/mongodb.png" },
       { name: "Express JS", image: "/express.png" },
-      { name: "Sql", image: "/sql.png" },
+      { name: "SQL", image: "/sql.png" },
+    ],
+  },
+  {
+    category: "Quality Assurance (QA)",
+    technologies: [
+      { name: "Manual Testing" },
+      { name: "API Testing" },
+      { name: "Postman" },
+      { name: "Test Case Design" },
+      { name: "CRUD Testing" },
+      { name: "Regression Testing" },
+    ],
+  },
+  {
+    category: "Data Analyst (Learning)",
+    technologies: [
+      { name: "Excel" },
+      { name: "SQL for Data Analysis" },
+      { name: "Python Basics" },
+      { name: "Data Cleaning" },
+      { name: "Data Visualization (Power BI/Tableau)" },
     ],
   },
   {
     category: "Others",
     technologies: [
-      { name: "Github", image: "/Github.png" },
+      { name: "GitHub", image: "/Github.png" },
       { name: "VS Code", image: "/vs.png" },
       { name: "Git", image: "/git.png" },
       { name: "Postman", image: "/postman.png" },
@@ -36,29 +57,37 @@ const skills = [
 
 const Skills = () => {
   return (
-    <>
-      <div className="skills-container">
-        <h2 className="skills-title">Skills</h2>
-        <p className="skills-description">I worked on various frontend</p>
-        <div className="skills-list">
-          {skills.map((skill, index) => {
-            return (
-              <div key={index} className="skill-category">
-                <h3>{skill.category}</h3>
-                <div className="technologies">
-                  {skill.technologies.map((tech, idx) => (
-                    <div key={idx} className="technology">
-                      <img src={tech.image} className="icon-image" />
-                      <span className="tech-name">{tech.name}</span>
-                    </div>
-                  ))}
+    <div className="skills-container">
+      <h2 className="skills-title">Skills</h2>
+      <p className="skills-description">
+        I work as a Full Stack Developer, QA Tester, and Aspiring Data Analyst
+      </p>
+
+      <div className="skills-list">
+        {skills.map((skill, index) => (
+          <div key={index} className="skill-category">
+            <h3>{skill.category}</h3>
+
+            <div className="technologies">
+              {skill.technologies.map((tech, idx) => (
+                <div key={idx} className="technology">
+                  {/* SHOW IMAGE ONLY IF EXISTS */}
+                  {tech.image && (
+                    <img
+                      src={tech.image}
+                      className="icon-image"
+                      alt={tech.name}
+                    />
+                  )}
+
+                  <span className="tech-name">{tech.name}</span>
                 </div>
-              </div>
-            );
-          })}
-        </div>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 

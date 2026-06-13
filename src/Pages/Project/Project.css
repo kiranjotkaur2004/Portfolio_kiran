@@ -76,11 +76,10 @@
 /* Section headers */
 .sectionSubText {
   font-size: 50px;
-    font-weight: 300;;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
-
 
 .sectionHeadText {
   font-size: 20px;
@@ -93,5 +92,25 @@
 @media (max-width: 640px) {
   .project-cards {
     justify-content: center;
+  }
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 70px 0;
+  margin-left: 250px; /* ✅ adjust based on sidebar width */
+}
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
   }
 }

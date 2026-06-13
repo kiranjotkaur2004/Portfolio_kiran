@@ -16,17 +16,24 @@ const About = () => {
         <div className="home-content">
           <div className="home-data">
             <h1 className="home-title">
-              <span>I'm Kiranjot Kaur.</span> Web Developer
+              <span>I'm Kiranjot Kaur.</span> Web Developer, QA Tester &
+              Aspiring Data Analyst
             </h1>
             <p className="home-description">
               <b>
                 {" "}
-                "Quick to learn and adapt to emerging technologies, frameworks,
-                and tools in dynamic environments."
+                “Quick to learn and adapt to emerging technologies, frameworks,
+                and tools in dynamic environments.”
               </b>{" "}
-              As a passionate web developer, I specialize in creating innovative
-              and user-centric websites that combine aesthetic design with
-              robust functionality.
+              I am a passionate developer specializing in building user-friendly
+              and efficient web applications using the MERN stack (MongoDB,
+              Express.js, React, Node.js). I also have hands-on experience in
+              API testing using Postman and QA methodologies, ensuring
+              application quality and reliability.
+              <br></br>
+              Currently, I am expanding my skills in Data Analytics, focusing on
+              data processing, SQL, and data visualization to strengthen my
+              analytical and problem-solving abilities.
             </p>
 
             {/* <div className="skill-icon">
