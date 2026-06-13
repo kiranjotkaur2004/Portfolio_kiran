@@ -42,6 +42,21 @@ const projects = [
     source_code_link: "https://github.com/kiranjotkaur2004/retail_sales",
   },
   {
+    name: "Meuble App – QA & MERN Stack Project",
+    description:
+      "Full-stack MERN e-commerce application with strong focus on Quality Assurance. Performed API testing using Postman, designed and executed test cases, validated CRUD operations, authentication flows, error handling, and implemented Selenium WebDriver automation for UI login testing and end-to-end workflow validation following STLC practices.",
+    tags: [
+      { icon: "/react.png" },
+      { icon: "/node.png" },
+      { icon: "/express.png" },
+      { icon: "/mongodb.png" },
+      { icon: "/postman.png" },
+      { icon: "/git.png" },
+    ],
+    image: "meuble.png",
+    source_code_link: "https://github.com/kiranjotkaur2004/Meuble-_app_QA-",
+  },
+  {
     name: "Postman API Automation Testing Framework",
     description:
       "REST API automation testing framework using Postman to validate CRUD operations with data-driven testing, JavaScript test scripts, and Newman execution.",
@@ -68,21 +83,7 @@ const projects = [
       "https://github.com/kiranjotkaur2004/API-Automation-Framework",
   },
   // ✅ NEW 2nd PROJECT (ADDED HERE)
-  {
-    name: "Meuble App – QA & MERN Stack Project",
-    description:
-      "A full-stack MERN application focused on e-commerce functionality with emphasis on Quality Assurance and API testing using Postman. Validated REST APIs for authentication, product management, response handling, and error scenarios during development.",
-    tags: [
-      { icon: "/react.png" },
-      { icon: "/node.png" },
-      { icon: "/express.png" },
-      { icon: "/mongodb.png" },
-      { icon: "/postman.png" },
-      { icon: "/git.png" },
-    ],
-    image: "meuble.png",
-    source_code_link: "https://github.com/kiranjotkaur2004/Meuble-_app_QA-",
-  },
+
   {
     name: "Iron-Pulse",
     description:
