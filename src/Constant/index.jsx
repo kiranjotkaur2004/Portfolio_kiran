@@ -43,8 +43,9 @@ const projects = [
   },
   {
     name: "Meuble App – QA & MERN Stack Project",
+
     description:
-      "Full-stack MERN e-commerce application with strong focus on Quality Assurance. Performed API testing using Postman, designed and executed test cases, validated CRUD operations, authentication flows, error handling, and implemented Selenium WebDriver automation for UI login testing and end-to-end workflow validation following STLC practices.",
+      "Full-stack MERN e-commerce application with a strong focus on Quality Assurance. Performed API testing using Postman, designed and executed test cases, validated CRUD operations, authentication workflows, response handling, and error scenarios. Implemented Selenium WebDriver automation using Python for UI testing, login validation, button interaction testing, and end-to-end workflow verification while following STLC methodologies.",
     tags: [
       { icon: "/react.png" },
       { icon: "/node.png" },
