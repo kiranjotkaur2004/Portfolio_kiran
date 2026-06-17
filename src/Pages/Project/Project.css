@@ -4,8 +4,10 @@
   align-items: center;
   justify-content: center;
   margin: 70px 0;
+  margin-left: 250px; /* sidebar spacing for desktop */
 }
 
+/* Section wrapper */
 .project-section {
   width: 100%;
   display: flex;
@@ -14,20 +16,29 @@
   justify-content: center;
 }
 
+/* Cards container */
 .project-cards {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
+/* Individual project card */
 .custom-box {
   padding: 20px;
   border-radius: 12px;
   background-color: rgb(24, 22, 49);
   width: 360px;
+  transition: transform 0.3s ease;
 }
 
+.custom-box:hover {
+  transform: translateY(-5px);
+}
+
+/* Project image */
 .apple-image {
   width: 100%;
   height: 200px;
@@ -35,6 +46,7 @@
   object-fit: cover;
 }
 
+/* GitHub button */
 .github {
   background-color: rgb(10, 10, 10);
   width: 30px;
@@ -52,10 +64,12 @@
   height: 50%;
 }
 
+/* Project text info */
 .project-info {
   margin-top: 2rem;
 }
 
+/* Tags section */
 .project-tags {
   margin-top: 1rem;
   display: flex;
@@ -67,13 +81,14 @@
   font-size: 15px;
 }
 
+/* Optional tag icon */
 .tag-icon {
   width: 20px;
   height: 20px;
   margin-left: 4px;
 }
 
-/* Section headers */
+/* Section headings */
 .sectionSubText {
   font-size: 50px;
   font-weight: 300;
@@ -88,29 +103,43 @@
   justify-content: center;
 }
 
-/* Responsive Design */
+/* ========================= */
+/* RESPONSIVE DESIGN */
+/* ========================= */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .projects {
+    margin-left: 0;
+    padding: 0 20px;
+  }
+
+  .custom-box {
+    width: 320px;
+  }
+}
+
+/* Mobile */
 @media (max-width: 640px) {
+  .projects {
+    margin-left: 0;
+    padding: 0 10px;
+  }
+
   .project-cards {
     justify-content: center;
   }
-}
-.projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 
-  margin: 70px 0;
-  margin-left: 250px; /* ✅ adjust based on sidebar width */
-}
-@media (max-width: 768px) {
-  .main-content {
-    margin-left: 0;
+  .custom-box {
+    width: 100%;
+    max-width: 350px;
   }
 
-  .sidebar {
-    position: relative;
-    width: 100%;
-    height: auto;
+  .sectionSubText {
+    font-size: 30px;
+  }
+
+  .sectionHeadText {
+    font-size: 16px;
   }
 }

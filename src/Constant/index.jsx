@@ -34,6 +34,34 @@ const edudetail = [
 
 const projects = [
   {
+    name: "Playwright TodoMVC Automation Framework",
+    description:
+      "End-to-End test automation framework built using Playwright and JavaScript for the TodoMVC React application. Automated todo creation, completion, filtering, and validation workflows with assertions, HTML reporting, screenshots, and video capture on failures. AI was used for documentation and test scenario brainstorming.",
+    tags: [
+      { icon: "/playwright.png" },
+      { icon: "/javascript.png" },
+      { icon: "/git.png" },
+    ],
+    image: "playwright.jpg",
+    source_code_link:
+      "https://github.com/kiranjotkaur2004/-Playwright-TodoMVC-Automation-Framework",
+  },
+
+  {
+    name: "Write Test Cases Using AI in Manual Testing",
+    description:
+      "QA project demonstrating the use of Generative AI for creating and refining manual test cases from user stories and requirements. Focused on test design, test scenario identification, positive and negative test coverage, and structured test documentation following QA best practices.",
+    tags: [
+      { icon: "/jira.png" },
+      { icon: "/testing.png" },
+      { icon: "/ai.png" },
+    ],
+    image: "manual_testing_ai.jpg",
+    source_code_link:
+      "https://github.com/kiranjotkaur2004/Write-Test-Cases-Using-AI-in-Manual-Testing",
+  },
+
+  {
     name: "Retail Sales Analysis SQL Project",
     description:
       "SQL-based retail sales analysis project focused on uncovering sales trends, top customers, and product performance to support data-driven business decisions.   ",
@@ -45,7 +73,7 @@ const projects = [
     name: "Meuble App – QA & MERN Stack Project",
 
     description:
-      "Full-stack MERN e-commerce application with a strong focus on Quality Assurance. Performed API testing using Postman, designed and executed test cases, validated CRUD operations, authentication workflows, response handling, and error scenarios. Implemented Selenium WebDriver automation using Python for UI testing, login validation, button interaction testing, and end-to-end workflow verification while following STLC methodologies.",
+      "Full-stack MERN e-commerce application with a strong focus on Quality Assurance. Performed API testing using Postman, designed and executed test cases, and validated CRUD operations, authentication workflows, response handling, and error scenarios. Implemented Selenium WebDriver automation using Python for UI testing, including login validation, button interactions, and end-to-end workflow verification following STLC methodologies. AI tools were used for test case brainstorming and documentation support. ",
     tags: [
       { icon: "/react.png" },
       { icon: "/node.png" },
@@ -60,7 +88,7 @@ const projects = [
   {
     name: "Postman API Automation Testing Framework",
     description:
-      "REST API automation testing framework using Postman to validate CRUD operations with data-driven testing, JavaScript test scripts, and Newman execution.",
+      "Performed API testing using Postman to validate CRUD operations, response status codes, authentication workflows, and request/response handling. Implemented JavaScript-based test scripts and data-driven testing using CSV files with Postman Collection Runner. Leveraged AI tools for test scenario generation and documentation support.",
     tags: [
       {
         name: "Postman",
@@ -88,7 +116,7 @@ const projects = [
   {
     name: "Iron-Pulse",
     description:
-      " Developed a responsive gym website using Mix.com’s drag-and-drop interface, incorporating media elements and ensuring seamless performance across devices.",
+      "AI was used for content planning, content refinement, and documentation support. Developed a responsive gym website using Mix.com’s drag-and-drop interface, incorporating media elements and ensuring seamless performance across devices.",
     tags: [
       {
         icon: "/wix.png",
